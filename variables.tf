@@ -6,6 +6,12 @@ variable "filename" {
   description = "The path to the function's deployment package within the local filesystem. If defined. No S3 support"
   type        = string
 }
+
+variable "aws_region" {
+  description = "aws region"
+  type = string
+}
+
 variable "description" {
   description = "Description of what your Lambda Function does."
   type        = string
